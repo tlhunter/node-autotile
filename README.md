@@ -3,7 +3,7 @@
 This library accepts a 2D array of truthy/falsey values representing the floor of a game level.
 This library returns a 2D array of numbers corresponding to the tileset offset which should then be used.
 
-* Graphics by [Buch](https://opengameart.org/content/dungeon-tileset)
+* Example tileset by [Buch](https://opengameart.org/content/dungeon-tileset)
 * Algorithm by [Sonny Bone](https://gamedevelopment.tutsplus.com/tutorials/how-to-use-tile-bitmasking-to-auto-tile-your-level-layouts--cms-25673)
 
 This implementation uses the 8-bit (cornered) approach.
