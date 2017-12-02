@@ -1,6 +1,6 @@
 {
   "name": "autotile",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "JavaScript Autotile Generator",
   "main": "index.js",
   "scripts": {
