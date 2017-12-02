@@ -1,7 +1,7 @@
 # Autotile
 
 This library accepts a 2D array of truthy/falsey values representing the floor of a game level.
-This library returns a 2D array of numbers corresponding to the spritemap offset which should then be used.
+This library returns a 2D array of numbers corresponding to the tileset offset which should then be used.
 
 * Graphics by [Buch](https://opengameart.org/content/dungeon-tileset)
 * Algorithm by [Sonny Bone](https://gamedevelopment.tutsplus.com/tutorials/how-to-use-tile-bitmasking-to-auto-tile-your-level-layouts--cms-25673)
@@ -9,11 +9,11 @@ This library returns a 2D array of numbers corresponding to the spritemap offset
 This implementation uses the 8-bit (cornered) approach.
 This implementation only works with 2 types of terrain (hence the true and false).
 
-## Tilesheet
+## Tileset
 
-You'll need to create a tilesheet with your tiles laid in the same order as shown here:
+You'll need to create a tileset with your tiles laid in the same order as shown here:
 
-![Tilesheet](./tilesheet-numbered.png)
+![Tileset](./tileset-numbered.png)
 
 The number of columns you use isn't as important, that will probably be handled by whatever rendering engine you're using.
 
