@@ -28,14 +28,14 @@ function autotileLookup(map, x_boundary, y_boundary, x, y) {
 
   if (!map[y][x]) return 0;
 
-  if (y >= 1 && map[y-1][x]) { n = true; sum += N; }
-  if (x >= 1 && map[y][x-1]) { w = true; sum += W; }
+  if (y > 0 && map[y-1][x]) { n = true; sum += N; }
+  if (x > 0 && map[y][x-1]) { w = true; sum += W; }
   if (x < x_boundary && map[y][x+1]) { e = true; sum += E; }
   if (y < y_boundary && map[y+1][x]) { s = true; sum += S; }
 
-  if (n && w && y > 1 && x > 1 && map[y-1][x-1]) sum += NW;
-  if (n && e && y > 1 && x < x_boundary && map[y-1][x+1]) sum += NE;
-  if (s && w && y < y_boundary && x > 1 && map[y+1][x-1]) sum += SW;
+  if (n && w && y > 0 && x > 0 && map[y-1][x-1]) sum += NW;
+  if (n && e && y > 0 && x < x_boundary && map[y-1][x+1]) sum += NE;
+  if (s && w && y < y_boundary && x > 0 && map[y+1][x-1]) sum += SW;
   if (s && e && x < x_boundary && y < y_boundary && map[y+1][x+1]) sum += SE;
 
   return BITMASK[sum];
